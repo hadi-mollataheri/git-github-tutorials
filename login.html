@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+  </head>
+
+  <body>
+    <header>
+      <nav><a href="../index.html">Home</a></nav>
+    </header>
+    <main>
+      <form action="#" method="get">
+        <h3>Please Sign in</h3>
+        <label for="test">Fill this test field:</label>
+        <input
+          type="text"
+          name="test"
+          id="test"
+          placeholder="Fill it like this"
+          required
+        />
+        <br />
+        <br />
+        <label for="pw">Enter your password:</label>
+        <input
+          id="pw"
+          type="password"
+          name="user-password"
+          pattern="^[0-9]{4}$"
+        />
+        <br />
+        <br />
+        <label for="number">Enter you number:</label>
+        <input
+          id="number"
+          type="number"
+          name="test-number"
+          step="2"
+          max="10"
+          min="0"
+        />
+        <br />
+        <br />
+        <label for="range-number">Enter your range number:</label>
+        <input
+          id="range-number"
+          type="range"
+          name="test-range-number"
+          max="10"
+          min="0"
+          step="1"
+        />
+        <p>Select your topping:</p>
+        <input id="cheese" type="checkbox" value="cheese" name="topping" />
+        <label for="cheese">Cheese</label>
+        <input id="sausages" type="checkbox" name="topping" value="sausages" />
+        <label for="sausages">Sausages</label>
+        <p>Select your gender:</p>
+        <input id="male" type="radio" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <label for="dropD-lunch">What's for lunch?</label>
+        <select id="dropD-luch" name="lunch">
+          <option value="cheese burger">Cheese Burger</option>
+          <option value="pizza">Pizza</option>
+          <option value="chicken">Chicken</option>
+        </select>
+        <br />
+        <br />
+        <label for="city">Which city you like to visit?</label>
+        <input id="city" type="text" list="cities" name="city-to-visit" />
+        <datalist id="cities">
+          <option value="Tehran" />
+          <option value="Mashhad" />
+          <option value="NY" />
+          <option value="Berlin" />
+        </datalist>
+        <br />
+        <br />
+        <label for="textarea"> Fill the textarea </label>
+        <textarea
+          id="textarea"
+          row="3"
+          col="4"
+          minlength="3"
+          maxlength="5"
+          required
+        ></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
